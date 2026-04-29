@@ -133,6 +133,13 @@ const projectData = {
       // Paste your actual Render URL below, making sure to keep the "/api/contact" at the end:
       const BACKEND_URL = "https://portfolio-84eq.onrender.com/api/contact"; 
 
+      // UX Improvement: Warn the user if the server is waking up from sleep
+      const waitWarning = setTimeout(() => {
+        if (status.textContent === "Sending message...") {
+          status.textContent = "Waking up secure server... this can take up to 60 seconds ⏳";
+        }
+      }, 5000);
+
       try {
         const response = await fetch(BACKEND_URL, {
           method: "POST",
@@ -142,6 +149,8 @@ const projectData = {
           body: JSON.stringify({ name, email, message })
         });
 
+        clearTimeout(waitWarning); // Clear the warning if it finishes fast
+
         if (response.ok) {
           status.textContent = "Message sent successfully!";
           form.reset();
@@ -149,6 +158,7 @@ const projectData = {
           status.textContent = "Failed to send message. Please try again later.";
         }
       } catch (error) {
+        clearTimeout(waitWarning);
         console.error("Error sending message:", error);
         status.textContent = "Error connecting to the server.";
       }
