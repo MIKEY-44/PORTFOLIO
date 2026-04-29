@@ -1,0 +1,68 @@
+:root {
+  /* =========================
+     COLORS (DARK DEFAULT)
+  ========================= */
+  --bg: #0b0f19;
+  --bg-secondary: #111827;
+
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  --primary: #6366f1;
+  --accent: #8b5cf6;
+
+  --border: #1f2933;
+  --card: rgba(255, 255, 255, 0.05);
+
+  /* =========================
+     SHADOWS / DEPTH
+  ========================= */
+  --shadow-sm: 0 4px 10px rgba(0,0,0,0.2);
+  --shadow-md: 0 10px 25px rgba(0,0,0,0.3);
+  --shadow-lg: 0 20px 40px rgba(0,0,0,0.4);
+
+  --glow: 0 0 20px rgba(99, 102, 241, 0.4);
+
+  /* =========================
+     SPACING SYSTEM (8px scale)
+  ========================= */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  /* =========================
+     BORDER / RADIUS
+  ========================= */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 20px;
+
+  /* =========================
+     TRANSITIONS
+  ========================= */
+  --transition-fast: all 0.2s ease;
+  --transition: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+}
+
+/* =========================
+   LIGHT MODE (ENHANCED)
+========================= */
+[data-theme="light"] {
+  --bg: #ffffff;
+  --bg-secondary: #f3f4f6;
+
+  --text: #111827;
+  --text-muted: #6b7280;
+
+  --card: rgba(0, 0, 0, 0.03);
+  --border: #e5e7eb;
+
+  --shadow-sm: 0 4px 10px rgba(0,0,0,0.05);
+  --shadow-md: 0 10px 25px rgba(0,0,0,0.08);
+  --shadow-lg: 0 20px 40px rgba(0,0,0,0.1);
+
+  --glow: 0 0 15px rgba(99, 102, 241, 0.2);
+}

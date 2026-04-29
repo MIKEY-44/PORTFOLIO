@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- SEO -->
+  <title>Omkar Kurdekar | Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer building scalable web applications and AI-driven solutions." />
+
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor-glow"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <h1 class="logo">Omkar</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+      <!-- Sun Icon (Shows in Dark Mode) -->
+      <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+      <!-- Moon Icon (Shows in Light Mode) -->
+      <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+      </svg>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+
+    <div class="hero-wrapper">
+      <div class="hero-content">
+        <h1>Hi, I'm <span id="typingText"></span></h1>
+        <h2>Full Stack Developer</h2>
+        <p>I build scalable full-stack applications and intelligent systems using modern web technologies and AI-driven solutions.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/images/projects/profile.jpeg" alt="Omkar Kurdekar" />
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-container">
+
+    <div class="skill">
+      <img src="assets/images/projects/java.png" />
+      <p>Java</p>
+    </div>
+
+    <div class="skill">
+      <img src="assets/images/projects/spring.png" />
+      <p>Spring Boot</p>
+    </div>
+
+    <div class="skill">
+      <img src="assets/images/projects/js.png" />
+      <p>JavaScript</p>
+    </div>
+
+    <div class="skill">
+      <img src="assets/images/projects/html.png" />
+      <p>HTML</p>
+    </div>
+
+    <div class="skill">
+      <img src="assets/images/projects/css.png" />
+      <p>CSS</p>
+    </div>
+
+    <div class="skill">
+      <img src="assets/images/projects/sql.png" />
+      <p>MySQL</p>
+    </div>
+
+    <div class="skill">
+      <img src="assets/images/projects/git.png" />
+      <p>GitHub</p>
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- RESUME -->
+  <section id="resume" class="resume">
+    <h2 class="section-title">Resume</h2>
+    <div class="resume-container">
+      <p>Interested in my professional background? Feel free to view or download my complete resume.</p>
+      <div class="resume-buttons">
+        <a href="assets/resume.pdf" target="_blank" class="btn primary">View Resume</a>
+        <a href="assets/resume.pdf" download="Omkar_Kurdekar_Resume.pdf" class="btn secondary">Download PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+
+    <h2 class="section-title">Selected Projects</h2>
+
+    <div class="projects-container">
+
+      <!-- PROJECT 1 -->
+      <div class="project-card" data-project="blockchain">
+        <div class="project-image">
+          <img src="assets/images/projects/project1.png" />
+          <div class="overlay">
+            <button class="view-btn">View Details</button>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Blockchain Transaction System</h3>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="project-card" data-project="pdf">
+        <div class="project-image">
+          <img src="assets/images/projects/project2.png" />
+          <div class="overlay">
+            <button class="view-btn">View Details</button>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Smart PDF Numbering Tool</h3>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="project-card" data-project="ai">
+        <div class="project-image">
+          <img src="assets/images/projects/project3.png" />
+          <div class="overlay">
+            <button class="view-btn">View Details</button>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>AI Computer Vision System</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  
+<div id="caseStudyContainer" class="case-study-overlay"></div>
+
+
+  <!-- BLOG -->
+  <section id="blog" class="blog">
+    <h2 class="section-title">Blog</h2>
+    <div class="blog-container">
+
+      <div class="blog-card">
+        <h3>Building a Real-World Computer Vision System for Heritage Conservation</h3>
+        <p class="preview">From dataset to deployment: how I built a full-stack AI system to automate heritage monitoring.</p>
+        <div class="full hidden">
+            <h4>1. The Real-World Problem</h4>
+            <p>Pushkarnis (ancient temple tanks) are vital to our heritage, but they're rapidly degrading from pollution and structural damage. Manual inspection is slow, inconsistent, and doesn't scale. The core challenge I tackled was: can we automate heritage monitoring using computer vision to make conservation efforts more effective?</p>
+            
+            <h4>2. A Full-Stack System, Not Just a Model</h4>
+            <p>I built a complete end-to-end pipeline, not just an isolated ML model. The system includes:</p>
+            <ul>
+                <li>Image input via a user-facing web interface.</li>
+                <li>A robust preprocessing pipeline to handle real-world data.</li>
+                <li>Multiple deep learning models for classification and analysis.</li>
+                <li>A prediction layer that delivers actionable insights.</li>
+                <li>A Flask-based backend to tie everything together.</li>
+            </ul>
+
+            <h4>3. The Unseen Work: Dataset Engineering</h4>
+            <p>This was the most critical phase. I collected and annotated over 2600+ real-world images, which came with challenges like lighting variations, environmental noise, and seasonal changes. I applied rigorous normalization, augmentation, and standardization techniques to build a robust dataset—a step many academic projects overlook.</p>
+
+            <h4>4. Exploring Architectural Tradeoffs</h4>
+            <p>Instead of settling on one model, I experimented with several architectures (MobileNet, ResNet50, DenseNet, EfficientNet, and even the advanced DINOv2) to understand the real-world tradeoffs between accuracy, inference speed, and computational cost.</p>
+
+            <h4>5. What The System Actually Does</h4>
+            <p>This is more than a classifier. It's a multi-module intelligent system that performs:</p>
+            <ul>
+                <li>Architectural style classification.</li>
+                <li>Crack and erosion detection.</li>
+                <li>Water quality estimation based on visual cues.</li>
+                <li>Real-time predictions via the web interface.</li>
+            </ul>
+
+            <h4>6. Honest Engineering Challenges</h4>
+            <p>The journey wasn't simple. I navigated dataset imbalance, managed overfitting in deeper models, and constantly balanced the accuracy vs. inference speed tradeoff, especially when considering deployment on less powerful hardware.</p>
+
+            <h4>7. Key Engineering Insight</h4>
+            <p>My biggest takeaway was that model accuracy alone is not enough. For a system to be useful, deployment constraints and real-world data variability matter far more. A 99% accurate model that's too slow or fails on noisy images is useless in the field.</p>
+
+            <h4>8. The Full-Stack Angle</h4>
+            <p>This project solidified my skills as a full-stack developer. I designed the system workflow, built the Flask API backend, handled the frontend user interaction, and integrated the ML pipeline. It was a true conversion of an ML concept into a full-stack engineering product.</p>
+
+            <h4>9. The Results</h4>
+            <p>The system achieved a classification accuracy in the 96-97% range across different models, providing a reliable baseline for automated monitoring and delivering real-time predictions.</p>
+
+            <h4>10. Future Improvements</h4>
+            <p>The system is designed for growth. Future steps include integrating real-time monitoring from drone feeds, scaling the dataset further, and optimizing the models for edge deployment.</p>
+        </div>
+        <button class="read-more">Read More</button>
+      </div>
+
+      <div class="blog-card">
+        <h3>💸 Building a Blockchain-Based Transaction System Using Flask and Web3.py</h3>
+        <p class="preview">A practical simulation of how blockchain transactions work in a full-stack web application using Flask and Web3.py.</p>
+        <div class="full hidden">
+            <h4>1. Why I Built This</h4>
+            <p>Blockchain is often explained in theory, but understanding it properly requires building something. I wanted to answer a practical question: can I simulate how blockchain transactions work using a web application? Instead of just reading about wallets, I built a system where users can send/receive transactions and maintain history through a web interface.</p>
+
+            <h4>2. What I Built</h4>
+            <p>I developed a Blockchain-Based Transaction Management System that simulates core blockchain behavior in a controlled environment. It includes user authentication, a wallet-like transaction flow, history tracking, and a backend database for persistence.</p>
+
+            <h4>3. System Architecture</h4>
+            <p>The application follows a typical full-stack structure:</p>
+            <ul>
+                <li><strong>Backend:</strong> Flask for routing, SQLAlchemy for database operations, and Web3.py to simulate blockchain interactions.</li>
+                <li><strong>Frontend:</strong> HTML + CSS using Jinja templates for dynamic data rendering.</li>
+                <li><strong>Database:</strong> SQLite to store users and transactions.</li>
+            </ul>
+
+            <h4>4. Key Features & Challenges</h4>
+            <p>The system features a secure authentication system with password hashing (bcrypt) and session management (Flask-Login). Users can send and receive transactions, with a complete transaction log maintained and displayed, mimicking a blockchain ledger. The main challenges were modeling abstract blockchain concepts, designing a clean relational data model, and ensuring security even in a simulation.</p>
+
+            <h4>5. What I Learned</h4>
+            <p>This project taught me that blockchain is fundamentally about data integrity and trust systems. It reinforced that even simplified systems require clear architecture and data flow. Most importantly, building a simulation teaches far more than just reading documentation. This project gave me a practical understanding of transaction systems and strengthened my skills in backend development (Flask), database design, and system architecture.</p>
+
+            <p style="font-weight: bold; color: var(--accent);">⚠️ Important Note: This is a simulated environment built for educational purposes and does not interact with a real blockchain network.</p>
+        </div>
+        <button class="read-more">Read More</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p>
+        I’m a Full Stack Developer focused on building practical, real-world systems that combine backend engineering with intelligent features.
+      </p>
+      <p>
+        I’ve worked on projects ranging from a blockchain-based transaction system to a computer vision platform for heritage analysis. My experience includes handling databases, and integrating machine learning models into web applications.
+      </p>
+      <p>
+        I enjoy turning complex ideas into working products.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get In Touch</h2>
+
+    <div class="contact-container">
+      <form id="contactForm" class="contact-form">
+
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn primary">Send Message</button>
+        <p id="formStatus"></p>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com/MIKEY-44" target="_blank" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/omkar-kurdekar-1020b5254/" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+      </div>
+      <p>&copy; 2026 Omkar Kurdekar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+
+      <span class="close-btn">&times;</span>
+
+      <img id="modalImage" class="modal-img" />
+
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+
+      <div id="modalTags"></div>
+
+     <div style="margin-top: 15px;">
+    <a id="modalGithub" target="_blank" class="btn primary">View Code</a>
+    <a id="modalCase" class="btn secondary">View Case Study</a>
+</div>
+
+    </div>
+  </div>
+
+  <!-- SCRIPTS (IMPORTANT: END OF BODY) -->
+  <script src="js/theme.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- COMMAND PALETTE -->
+<div class="command-palette" id="commandPalette">
+
+  <div class="palette-box">
+    <input 
+      type="text" 
+      id="paletteInput" 
+      placeholder="Type a command..."
+      autocomplete="off"
+    />
+
+    <ul id="paletteList"></ul>
+  </div>
+
+</div>
+</body>
+</html>
