@@ -5,14 +5,19 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api")
 @CrossOrigin(origins = "*") // Allows your frontend to communicate with this backend
 public class ContactController {
 
     @Autowired
     private EmailService emailService;
 
-    @PostMapping("/contact")
+    // This handles people visiting your Render URL in their browser
+    @GetMapping("/")
+    public ResponseEntity<String> home() {
+        return ResponseEntity.ok("Portfolio Backend is up and running! Ready to receive messages.");
+    }
+
+    @PostMapping("/api/contact")
     public ResponseEntity<String> sendEmail(@RequestBody ContactRequest request) {
         try {
             emailService.sendContactEmail(request.getName(), request.getEmail(), request.getMessage());
