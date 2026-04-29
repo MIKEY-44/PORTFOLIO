@@ -131,7 +131,7 @@ const projectData = {
       
       // Update this URL once your backend is deployed!
       // Paste your actual Render URL below, making sure to keep the "/api/contact" at the end:
-      const BACKEND_URL = "https://omkar-portfolio-backend.onrender.com/api/contact"; 
+      const BACKEND_URL = "https://portfolio.onrender.com/api/contact"; 
 
       try {
         const response = await fetch(BACKEND_URL, {
