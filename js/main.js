@@ -129,27 +129,23 @@ const projectData = {
 
       status.textContent = "Sending message...";
       
-      // Update this URL once your backend is deployed!
-      // Paste your actual Render URL below, making sure to keep the "/api/contact" at the end:
-      const BACKEND_URL = "https://portfolio-84eq.onrender.com/api/contact"; 
-
-      // UX Improvement: Warn the user if the server is waking up from sleep
-      const waitWarning = setTimeout(() => {
-        if (status.textContent === "Sending message...") {
-          status.textContent = "Waking up secure server... this can take up to 60 seconds ⏳";
-        }
-      }, 5000);
+      // Using Web3Forms API to bypass Render's SMTP block
+      const BACKEND_URL = "https://api.web3forms.com/submit"; 
 
       try {
         const response = await fetch(BACKEND_URL, {
           method: "POST",
           headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Accept": "application/json"
           },
-          body: JSON.stringify({ name, email, message })
+          body: JSON.stringify({ 
+            access_key: "df043ca9-2a3d-4a7d-b011-926e88283d10",
+            name: name, 
+            email: email, 
+            message: message 
+          })
         });
-
-        clearTimeout(waitWarning); // Clear the warning if it finishes fast
 
         if (response.ok) {
           status.textContent = "Message sent successfully!";
@@ -158,7 +154,6 @@ const projectData = {
           status.textContent = "Failed to send message. Please try again later.";
         }
       } catch (error) {
-        clearTimeout(waitWarning);
         console.error("Error sending message:", error);
         status.textContent = "Error connecting to the server.";
       }
